@@ -4,8 +4,15 @@
   box-sizing: border-box;
   font-family: "Work Sans";
 }
-img {
-  width: 100%;
+.btn {
+  width: 180px;
+  height: 64px;
+  background: #ff900e;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 10px;
 }
 .header {
   padding: 50px 0;
@@ -39,7 +46,9 @@ img {
   flex-direction: column;
   gap: 20px;
   background: rgba(255, 144, 14, 0.1);
-  /* margin-bottom: 85px; */
+}
+.banner img {
+  width: 100%;
 }
 .banner-title-section {
   width: 800px;
@@ -55,12 +64,11 @@ img {
   font-size: 16px;
   color: #727272;
 }
+.banner .btn {
+  margin-bottom: 30px;
+}
 .banner img {
   width: 75%;
-  height: 75%;
-}
-.btn {
-  margin-bottom: 30px;
 }
 .teams-section {
   display: flex;
@@ -77,25 +85,33 @@ img {
 .team-image {
   width: 100%;
 }
+.team-image img {
+  width: 100%;
+}
 .team-features {
   width: 30%;
 }
 .team-title {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 45px;
   margin-bottom: 30px;
 }
 .team-description {
   font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
   color: #727272;
   margin-bottom: 30px;
 }
 .features-section {
   margin-top: 130px;
+  margin-bottom: 130px;
   display: flex;
   justify-content: center;
   gap: 80px;
+}
+.feature-image img {
+  width: 100%;
 }
 .feature-details {
   width: 500px;
@@ -114,6 +130,7 @@ img {
   color: #727272;
   font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 .feature-item {
   background: #ffffff;
@@ -130,36 +147,46 @@ img {
 .item-title {
   font-weight: 600;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 .item-description {
   font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
+  color: #727272;
 }
 .facts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75%;
+  width: 77%;
+}
+.fact-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
 }
 .fact-description {
   margin-bottom: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
 }
 .boxes {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 70px;
+  gap: 150px;
 }
 .box {
   text-align: center;
-  width: 14%;
-  padding: 35px 25px;
+  padding: 45px 35px;
   border: 2px solid #ff900e;
   border-radius: 10px;
 }
 .box img {
-  width: 25%;
   margin-bottom: 10px;
 }
 .box-number {
@@ -172,14 +199,23 @@ img {
   align-items: center;
   text-align: center;
 }
-
+.sponsors-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 30px;
+}
+.sponsors-description {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #727272;
+}
 .sponsors-image {
   display: flex;
   justify-content: center;
-  gap: 200px;
-}
-.sponsors-image img {
-  width: 8%;
+  gap: 100px;
+  margin-bottom: 50px;
 }
 footer {
   margin: 100px auto;
@@ -194,7 +230,31 @@ footer {
   color: #424242;
   padding: 40px 0;
 }
-@media screen and (max-width: 768px) {
+.latest-work-section {
+  margin: 0 auto;
+  width: 75%;
+}
+.work-list {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.works img {
+  width: 80%;
+}
+.work-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 50px;
+}
+.works img {
+  margin-bottom: 10px;
+}
+.works h1 {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 576px) {
   .nav {
     flex-direction: column;
     align-items: center;
@@ -206,5 +266,43 @@ footer {
   .banner-title-section {
     width: 100%;
     flex-wrap: wrap;
+  }
+  .banner img {
+    width: 95%;
+  }
+  .teams-section {
+    flex-wrap: wrap;
+  }
+  .team-features {
+    margin: 10px;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .teams-image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature-title::before {
+    display: none;
+  }
+  .features-section {
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .feature-image {
+    width: 95%;
+  }
+  .boxes {
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 50px;
+    justify-content: center;
+  }
+  .sponsors-image {
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .work-list {
+    flex-wrap: wrap;
+    flex: 1;
   }
 }
