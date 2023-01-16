@@ -329,4 +329,7 @@ footer {
     flex-wrap: wrap;
     flex: 1;
   }
+  .experience {
+    display: none;
+  }
 }
