@@ -109,6 +109,26 @@
   display: flex;
   justify-content: center;
   gap: 80px;
+  position: relative;
+}
+.experience {
+  padding: 30px;
+  border-radius: 10px;
+  background: #ff900e;
+  color: #fff;
+  position: absolute;
+  left: 45%;
+  bottom: 0%;
+  text-align: center;
+}
+.experience-title {
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+.experience-small {
+  font-weight: 500;
+  font-size: 25px;
 }
 .feature-image img {
   width: 100%;
@@ -182,9 +202,13 @@
 }
 .box {
   text-align: center;
-  padding: 45px 35px;
+  padding: 35px 25px;
   border: 2px solid #ff900e;
   border-radius: 10px;
+  transition: transform 1.5s;
+}
+.box:hover {
+  transform: scale(1.5) rotate(360deg);
 }
 .box img {
   margin-bottom: 10px;
